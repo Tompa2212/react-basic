@@ -1,0 +1,22 @@
+.gallery {
+  padding: 6rem;
+}
+
+.gallery__text {
+  max-width: 70ch;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
+.gallery__img-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 35rem));
+  grid-gap: 2rem;
+  margin-bottom: 9rem;
+}
+
+.gallery__img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=gallery.css.map */

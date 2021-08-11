@@ -1,0 +1,33 @@
+.profiles {
+  padding: 6rem;
+}
+
+.profiles .profiles-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.profile {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.profile .shape {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: #b6b6b6;
+  margin-bottom: 3rem;
+}
+
+.profile__details {
+  text-align: center;
+}
+
+.profile h4 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=profiles.css.map */

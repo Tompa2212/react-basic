@@ -1,0 +1,21 @@
+.gallery {
+  padding: 6rem;
+
+  &__text {
+    max-width: 70ch;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+
+  &__img-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 35rem));
+    grid-gap: 2rem;
+    margin-bottom: 9rem;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}

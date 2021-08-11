@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #b6b6b6;
+  --primary: #1c1c1c;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: var(--primary);
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  padding-bottom: 1.5rem;
+}
+h3 {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  text-align: center;
+  margin: 4rem 0 6rem 0;
+}
+
+.section-title p {
+  margin-bottom: 4rem;
+}
+
+.section-text {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+.underline {
+  width: 8rem;
+  height: 0.1rem;
+  background: var(--white);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: var(--primary);
+  border: 1px solid var(--white);
+  border-radius: 0.2rem;
+  color: inherit;
+  font-size: inherit;
+  padding: 1.5rem 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.cetiri {
+  padding: 6rem;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,95 @@
+.list__items {
+  width: 75%;
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .list .list__items {
+    text-align: left;
+  }
+}
+
+.list__item {
+  position: relative;
+  padding: 3rem;
+  background: #b6b6b6;
+  color: #1c1c1c;
+  border-radius: 2px;
+  margin-bottom: 3rem;
+}
+
+.btn--delete {
+  margin-top: 2rem;
+  background: #b91b1b;
+  border: 1px solid #b6b6b6;
+  border-radius: 0.4rem;
+  color: #b6b6b6;
+  font-size: inherit;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.submitItem {
+  background: green;
+  border: 1px solid #b6b6b6;
+  border-radius: 0.4rem;
+  color: #b6b6b6;
+  font-size: inherit;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.moveUp {
+  background: transparent;
+  border: transparent;
+  color: #11af11;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 10%;
+  top: 17%;
+  cursor: pointer;
+}
+
+.moveDown {
+  background: transparent;
+  border: transparent;
+  color: #b91b1b;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 10%;
+  bottom: 17%;
+  cursor: pointer;
+}
+
+.newItemForm {
+  width: 75%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 3rem;
+  background: #b6b6b6;
+  margin-bottom: 3rem;
+}
+
+.newItemForm label {
+  color: #1c1c1c;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+.newItemForm input,
+.newItemForm textarea {
+  font-size: inherit;
+  margin-bottom: 2rem;
+  width: 30rem;
+  padding: 0.7rem;
+  border-radius: 2px;
+  background: rgba(28, 28, 28, 0.9);
+  color: #b6b6b6;
+}
+
+h3 {
+  color: #1c1c1c;
+}
+/*# sourceMappingURL=lista.css.map */

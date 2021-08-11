@@ -1,0 +1,145 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #1c1c1c;
+}
+
+.navigation-scrolled {
+  background: #b6b6b6;
+  color: #1c1c1c;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.links-container {
+  height: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.links li {
+  padding: 1rem;
+}
+
+.links a,
+.links a:visited {
+  color: #b6b6b6;
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0rem;
+  height: 5rem;
+  transform: translate(-50%, -50%) skew(-20deg);
+  background: #b6b6b6;
+  z-index: -1000;
+  transition: all 0.2s;
+}
+
+.navigation-scrolled .links a::before {
+  background: #1c1c1c;
+}
+
+.links a:hover:before {
+  width: 10rem;
+}
+
+.links a:hover {
+  color: #1c1c1c;
+}
+
+.navigation-scrolled .links a {
+  color: #1c1c1c;
+}
+
+.navigation-scrolled .links a:hover {
+  color: #b6b6b6;
+}
+
+.navigation-scrolled .logo {
+  border: 2px solid #1c1c1c;
+}
+
+@media screen and (min-width: 1070px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav__btn-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+    justify-content: flex-end;
+    margin-right: 10rem;
+    display: flex;
+    flex-grow: 1;
+  }
+  .links-container .links {
+    display: flex;
+  }
+  .links li {
+    margin-right: 7rem;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+.logo {
+  padding: 1rem 1.5rem;
+  border: 2px solid #b6b6b6;
+  border-radius: 0.2rem;
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: #b6b6b6;
+  text-decoration: none;
+}
+
+.navigation-scrolled .logo {
+  color: #1c1c1c;
+}
+
+.nav__btn-toggle {
+  color: #b6b6b6;
+  background: transparent;
+  border: transparent;
+  font-size: 3.3rem;
+  cursor: pointer;
+}
+
+.navigation-scrolled .nav__btn-toggle {
+  color: #1c1c1c;
+}
+/*# sourceMappingURL=navigation.css.map */
